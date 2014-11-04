@@ -1,0 +1,101 @@
+LIBRARY IEEE;
+
+USE IEEE.STD_LOGIC_1164.all;
+USE IEEE.STD_LOGIC_ARITH.all;
+USE IEEE.STD_LOGIC_UNSIGNED.all;
+
+
+ENTITY clocks IS
+
+PORT( clk:		IN		STD_LOGIC;
+		keyMore:	IN		STD_LOGIC;
+		keyLess:	IN		STD_LOGIC;
+		clk_out:	OUT	STD_LOGIC;
+		clk_1hz:	OUT	STD_LOGIC
+		);
+END ejmleds;
+
+
+ARCHITECTURE clock_divider OF clocks IS
+
+type		estado	is (e0,e1,e2,e3);
+signal	estado_s:		estado;
+--signal	puls_0_ant_s:	std_logic;
+
+BEGIN
+
+--process 
+--
+--begin
+--
+--WAIT UNTIL (PulS_0'event AND PulS_0='0');
+--
+--	case estado_s is
+--	when e0=>
+--		estado_s<=e1;
+--
+--	when e1=>
+--		estado_s<=e2;
+--
+--	when e2=>
+--		estado_s<=e3;
+--
+--	when e3=>
+--		estado_s<=e0;
+--	end case;
+--
+--	case estado_s is
+--	when e0=>
+--		LED_0<='1';
+--		LED_1<='0';
+--		LED_2<='0';
+--		LED_3<='0';
+--	when e1=>
+--		LED_0<='0';
+--		LED_1<='1';
+--		LED_2<='0';
+--		LED_3<='0';
+--	when e2=>
+--		LED_0<='0';
+--		LED_1<='0';
+--		LED_2<='1';
+--		LED_3<='0';
+--	when e3=>
+--		LED_0<='0';
+--		LED_1<='0';
+--		LED_2<='0';
+--		LED_3<='1';
+--	end case;
+--
+--
+--END process;
+
+bloque: block (PulS_0='0' AND PulS_0'event)
+
+begin
+
+selector:	estado_s<= guarded	e1 when (estado_s=e0) else
+								e2 when (estado_s=e1) else
+								e3 when (estado_s=e2) else
+								e0 when (estado_s=e3) else
+								unaffected;
+								
+LED_0_sel: with estado_s select
+						LED_0<=guarded '1' when e0,
+						'0' when others;
+						
+LED_1_sel: with estado_s select
+						LED_1<=guarded '1' when e1,
+						'0' when others;
+						
+LED_2_sel: with estado_s select
+						LED_2<=guarded '1' when e2,
+						'0' when others;
+
+LED_3_sel: with estado_s select
+						LED_3<=guarded '1' when e3,
+						'0' when others;	
+	
+end block;	
+
+END ARCHITECTURE;
