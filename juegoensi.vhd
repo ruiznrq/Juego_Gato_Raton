@@ -16,6 +16,7 @@ END juegoensi;
 ARCHITECTURE juegoensi_arch OF juegoensi IS
 
 	signal pos:			integer range 0 to 17 :=0;
+	signal mov:			integer range -1 to 1 :=1;
 
 BEGIN
 
@@ -26,27 +27,29 @@ BEGIN
 	
 		IF (pos=0) THEN
 			IF (sw(1)='1') THEN
-				pos<=0;
+				mov<=0;
 			ELSIF (sw(1)='0') THEN
-				pos<=1;
+				mov<=0;
 			END IF;
 			
 		ELSIF (pos=17) THEN
 			IF (sw(16)='1') THEN
-				pos<=17;
+				mov<=0;
 			ELSIF (sw(16)='0') THEN
-				pos<=16;
+				mov<=-1;
 			END IF;
 			
 		ELSE
 			IF (sw(pos-1)='1') AND (sw(pos+1)='1') THEN
-				pos<=pos;
+				mov<=0;
 			ELSIF (sw(pos+1)='0') THEN
-				pos<=pos+1;
+				mov<=1;
 			ELSIF (sw(pos-1)='0') THEN
-				pos<=pos-1;
+				mov<=-1;
 			END IF;				
-		END IF;		
+		END IF;
+			
+		pos <= pos+mov;
 			
 	END IF;	
 	END process;
