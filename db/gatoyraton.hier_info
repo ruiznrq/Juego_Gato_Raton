@@ -114,6 +114,7 @@ sw[0] => Mux0.IN36
 sw[0] => Mux1.IN36
 sw[1] => Mux0.IN35
 sw[1] => Mux1.IN35
+sw[1] => mov.DATAB
 sw[2] => Mux0.IN34
 sw[2] => Mux1.IN34
 sw[3] => Mux0.IN33

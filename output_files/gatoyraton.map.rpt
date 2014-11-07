@@ -1,5 +1,5 @@
 Analysis & Synthesis report for gatoyraton
-Wed Nov 05 16:31:49 2014
+Fri Nov 07 11:37:30 2014
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,13 +44,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 05 16:31:49 2014           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 07 11:37:30 2014           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; gatoyraton                                      ;
 ; Top-level Entity Name              ; gatoyraton                                      ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 230                                             ;
-;     Total combinational functions  ; 230                                             ;
+; Total logic elements               ; 238                                             ;
+;     Total combinational functions  ; 238                                             ;
 ;     Dedicated logic registers      ; 63                                              ;
 ; Total registers                    ; 63                                              ;
 ; Total pins                         ; 40                                              ;
@@ -173,16 +173,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 230       ;
+; Estimated Total logic elements              ; 238       ;
 ;                                             ;           ;
-; Total combinational functions               ; 230       ;
+; Total combinational functions               ; 238       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 97        ;
-;     -- 3 input functions                    ; 51        ;
-;     -- <=2 input functions                  ; 82        ;
+;     -- 4 input functions                    ; 85        ;
+;     -- 3 input functions                    ; 59        ;
+;     -- <=2 input functions                  ; 94        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 176       ;
+;     -- normal mode                          ; 184       ;
 ;     -- arithmetic mode                      ; 54        ;
 ;                                             ;           ;
 ; Total registers                             ; 63        ;
@@ -193,8 +193,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; clk_50MHz ;
 ; Maximum fan-out                             ; 54        ;
-; Total fan-out                               ; 848       ;
-; Average fan-out                             ; 2.55      ;
+; Total fan-out                               ; 847       ;
+; Average fan-out                             ; 2.48      ;
 +---------------------------------------------+-----------+
 
 
@@ -203,9 +203,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
-; |gatoyraton                ; 230 (0)           ; 63 (0)       ; 0           ; 0            ; 0       ; 0         ; 40   ; 0            ; |gatoyraton                 ; work         ;
-;    |clocks:inst|           ; 138 (138)         ; 56 (56)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gatoyraton|clocks:inst     ; work         ;
-;    |juegoensi:inst1|       ; 92 (92)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gatoyraton|juegoensi:inst1 ; work         ;
+; |gatoyraton                ; 238 (0)           ; 63 (0)       ; 0           ; 0            ; 0       ; 0         ; 40   ; 0            ; |gatoyraton                 ; work         ;
+;    |clocks:inst|           ; 141 (141)         ; 56 (56)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gatoyraton|clocks:inst     ; work         ;
+;    |juegoensi:inst1|       ; 97 (97)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |gatoyraton|juegoensi:inst1 ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -277,7 +277,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -287,7 +287,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Nov 05 16:31:48 2014
+    Info: Processing started: Fri Nov 07 11:37:23 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off gatoyraton -c gatoyraton
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file gatoyraton.bdf
@@ -341,34 +341,34 @@ Warning (275080): Converted elements in bus name "SW" using legacy naming rules.
     Warning (275081): Converted element name(s) from "SW[17]" to "SW17"
 Info (12128): Elaborating entity "clocks" for hierarchy "clocks:inst"
 Info (12128): Elaborating entity "juegoensi" for hierarchy "juegoensi:inst1"
-Info (10041): Inferred latch for "LEDR[0]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[1]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[2]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[3]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[4]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[5]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[6]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[7]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[8]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[9]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[10]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[11]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[12]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[13]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[14]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[15]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[16]" at juegoensi.vhd(60)
-Info (10041): Inferred latch for "LEDR[17]" at juegoensi.vhd(60)
+Info (10041): Inferred latch for "LEDR[0]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[1]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[2]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[3]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[4]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[5]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[6]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[7]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[8]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[9]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[10]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[11]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[12]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[13]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[14]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[15]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[16]" at juegoensi.vhd(64)
+Info (10041): Inferred latch for "LEDR[17]" at juegoensi.vhd(64)
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 284 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 294 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 20 input pins
     Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 244 logic cells
+    Info (21061): Implemented 254 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 41 warnings
-    Info: Peak virtual memory: 514 megabytes
-    Info: Processing ended: Wed Nov 05 16:31:49 2014
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 515 megabytes
+    Info: Processing ended: Fri Nov 07 11:37:30 2014
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 

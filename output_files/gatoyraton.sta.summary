@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clk_50MHz'
+Slack : -8.061
+TNS   : -265.679
+
+Type  : Slow Model Setup 'clocks:inst|clk_s'
+Slack : -4.522
+TNS   : -28.588
+
+Type  : Slow Model Setup 'key3'
+Slack : 0.229
+TNS   : 0.000
+
+Type  : Slow Model Hold 'clk_50MHz'
+Slack : -2.540
+TNS   : -2.540
+
+Type  : Slow Model Hold 'clocks:inst|clk_s'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'key3'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk_50MHz'
+Slack : -1.380
+TNS   : -55.380
+
+Type  : Slow Model Minimum Pulse Width 'key3'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Slow Model Minimum Pulse Width 'clocks:inst|clk_s'
+Slack : -0.500
+TNS   : -7.000
+
+Type  : Fast Model Setup 'clk_50MHz'
+Slack : -3.089
+TNS   : -94.503
+
+Type  : Fast Model Setup 'clocks:inst|clk_s'
+Slack : -1.384
+TNS   : -8.393
+
+Type  : Fast Model Setup 'key3'
+Slack : 0.631
+TNS   : 0.000
+
+Type  : Fast Model Hold 'clk_50MHz'
+Slack : -1.584
+TNS   : -1.584
+
+Type  : Fast Model Hold 'clocks:inst|clk_s'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'key3'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk_50MHz'
+Slack : -1.380
+TNS   : -55.380
+
+Type  : Fast Model Minimum Pulse Width 'key3'
+Slack : -1.222
+TNS   : -3.222
+
+Type  : Fast Model Minimum Pulse Width 'clocks:inst|clk_s'
+Slack : -0.500
+TNS   : -7.000
+
+------------------------------------------------------------

@@ -51,22 +51,22 @@ BEGIN
 		
 		CASE vel IS
 		WHEN 0 =>
-			IF (contador=50000000) THEN
+			IF (contador=25000000) THEN
 				clk_s<=NOT clk_s;
 				contador:=0;
 			END IF;		
 		WHEN 1 =>
-			IF (contador=25000000) THEN
-				clk_s<=NOT clk_s;
-				contador:=0;
-			END IF;			
-		WHEN 2 =>
 			IF (contador=12500000) THEN
 				clk_s<=NOT clk_s;
 				contador:=0;
 			END IF;			
-		WHEN 3 =>
+		WHEN 2 =>
 			IF (contador=6250000) THEN
+				clk_s<=NOT clk_s;
+				contador:=0;
+			END IF;			
+		WHEN 3 =>
+			IF (contador=3125000) THEN
 				clk_s<=NOT clk_s;
 				contador:=0;
 			END IF;	
