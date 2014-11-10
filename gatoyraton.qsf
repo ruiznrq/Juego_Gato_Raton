@@ -53,7 +53,7 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_location_assignment PIN_Y18 -to LEDG7
-set_location_assignment PIN_Y12 -to LEDG8
+set_location_assignment PIN_Y18 -to LEDG8
 set_location_assignment PIN_W26 -to key3
 set_location_assignment PIN_N2 -to clk_50MHz
 set_global_assignment -name VHDL_FILE juegoensi.vhd
@@ -93,4 +93,32 @@ set_location_assignment PIN_U3 -to SW14
 set_location_assignment PIN_U4 -to SW15
 set_location_assignment PIN_V1 -to SW16
 set_location_assignment PIN_V2 -to SW17
+set_location_assignment PIN_P23 -to key2
+set_location_assignment PIN_AE22 -to LG0
+set_location_assignment PIN_AF22 -to LG1
+set_location_assignment PIN_W19 -to LG2
+set_location_assignment PIN_V18 -to LG3
+set_location_assignment PIN_U18 -to LG4
+set_location_assignment PIN_U17 -to LG5
+set_location_assignment PIN_AA20 -to LG6
+set_location_assignment PIN_Y18 -to LG7
+set_global_assignment -name VHDL_FILE output_files/conversor.vhd
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_location_assignment PIN_AF10 -to hex0_a
+set_location_assignment PIN_AB12 -to hex0_b
+set_location_assignment PIN_AC12 -to hex0_c
+set_location_assignment PIN_AD11 -to hex0_d
+set_location_assignment PIN_AE11 -to hex0_e
+set_location_assignment PIN_V14 -to hex0_f
+set_location_assignment PIN_V13 -to hex0_g
+set_location_assignment PIN_V20 -to hex1_a
+set_location_assignment PIN_V21 -to hex1_b
+set_location_assignment PIN_W21 -to hex1_c
+set_location_assignment PIN_Y22 -to hex1_d
+set_location_assignment PIN_AA24 -to hex1_e
+set_location_assignment PIN_AA23 -to hex1_f
+set_location_assignment PIN_AB24 -to hex1_g
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_location_assignment PIN_Y12 -to PinPrueba
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
