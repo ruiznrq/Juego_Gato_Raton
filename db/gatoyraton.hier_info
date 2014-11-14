@@ -60,7 +60,7 @@ hex1_d <= 7447:inst2.OD
 hex1_e <= 7447:inst2.OE
 hex1_f <= 7447:inst2.OF
 hex1_g <= 7447:inst2.OG
-PinPrueba <= juegoensi:inst1.prueba
+PinPrueba <= clocks:inst.clk_10hz
 
 
 |gatoyraton|juegoensi:inst1
@@ -247,7 +247,34 @@ suma[6] <= suma[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 |gatoyraton|clocks:inst
 clk => clk_s.CLK
+clk => clk10_s.CLK
 clk => clk1_s.CLK
+clk => contador_10[0].CLK
+clk => contador_10[1].CLK
+clk => contador_10[2].CLK
+clk => contador_10[3].CLK
+clk => contador_10[4].CLK
+clk => contador_10[5].CLK
+clk => contador_10[6].CLK
+clk => contador_10[7].CLK
+clk => contador_10[8].CLK
+clk => contador_10[9].CLK
+clk => contador_10[10].CLK
+clk => contador_10[11].CLK
+clk => contador_10[12].CLK
+clk => contador_10[13].CLK
+clk => contador_10[14].CLK
+clk => contador_10[15].CLK
+clk => contador_10[16].CLK
+clk => contador_10[17].CLK
+clk => contador_10[18].CLK
+clk => contador_10[19].CLK
+clk => contador_10[20].CLK
+clk => contador_10[21].CLK
+clk => contador_10[22].CLK
+clk => contador_10[23].CLK
+clk => contador_10[24].CLK
+clk => contador_10[25].CLK
 clk => contador_1[0].CLK
 clk => contador_1[1].CLK
 clk => contador_1[2].CLK
@@ -304,7 +331,7 @@ keyMore => vel[0].CLK
 keyMore => vel[1].CLK
 clk_out <= clk_s.DB_MAX_OUTPUT_PORT_TYPE
 clk_1hz <= clk1_s.DB_MAX_OUTPUT_PORT_TYPE
-clk_10hz <= comb.DB_MAX_OUTPUT_PORT_TYPE
+clk_10hz <= clk10_s.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |gatoyraton|7447:inst3

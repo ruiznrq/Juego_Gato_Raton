@@ -26,7 +26,7 @@ ARCHITECTURE juegoensi_arch OF juegoensi IS
 	signal suma_s:		integer range 0 to 99 :=0;
 	signal SW_old: 	std_logic_vector (17 downto 0):="000000000000000000";
 	signal nada:		std_logic :='0';
-
+	
 BEGIN
 
 
@@ -123,12 +123,13 @@ BEGIN
 	--wait until (nada = '1') for 100 ms;
 	--wait until (not(sw=SW_old)) for 100 ms;
 		IF (clk_10hz'event AND clk_10hz='1') THEN
-			IF (sw_old=sw) THEN
+			IF NOT(sw_old=sw) THEN
 				sw_old<=sw;
 				IF (running = '1') THEN
 					suma_s <= suma_s + 1;
 					prueba<='1';
-				ELSIF (running ='0') OR (suma_s=99) THEN
+				END IF;
+				IF (running ='0') OR (suma_s=99) THEN
 					suma_s <= 0;
 					prueba <= '0';
 				END IF;

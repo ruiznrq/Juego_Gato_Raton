@@ -1381,21 +1381,21 @@ applicable agreement for further details.
 		(pt 168 32)
 		(output)
 		(text "clk_out" (rect 0 0 35 12)(font "Arial" ))
-		(text "clk_out" (rect 118 27 147 39)(font "Arial" ))
+		(text "clk_out" (rect 118 27 153 39)(font "Arial" ))
 		(line (pt 168 32)(pt 152 32))
 	)
 	(port
 		(pt 168 48)
 		(output)
 		(text "clk_1hz" (rect 0 0 36 12)(font "Arial" ))
-		(text "clk_1hz" (rect 117 43 147 55)(font "Arial" ))
+		(text "clk_1hz" (rect 117 43 153 55)(font "Arial" ))
 		(line (pt 168 48)(pt 152 48))
 	)
 	(port
 		(pt 168 64)
 		(output)
 		(text "clk_10hz" (rect 0 0 42 12)(font "Arial" ))
-		(text "clk_10hz" (rect 112 59 147 71)(font "Arial" ))
+		(text "clk_10hz" (rect 112 59 154 71)(font "Arial" ))
 		(line (pt 168 64)(pt 152 64))
 	)
 	(drawing
@@ -1445,28 +1445,28 @@ applicable agreement for further details.
 		(pt 184 32)
 		(output)
 		(text "prueba" (rect 0 0 33 12)(font "Arial" ))
-		(text "prueba" (rect 136 27 163 39)(font "Arial" ))
+		(text "prueba" (rect 136 27 169 39)(font "Arial" ))
 		(line (pt 184 32)(pt 168 32))
 	)
 	(port
 		(pt 184 48)
 		(output)
 		(text "LEDR[17..0]" (rect 0 0 61 12)(font "Arial" ))
-		(text "LEDR[17..0]" (rect 112 43 163 55)(font "Arial" ))
+		(text "LEDR[17..0]" (rect 112 43 173 55)(font "Arial" ))
 		(line (pt 184 48)(pt 168 48)(line_width 3))
 	)
 	(port
 		(pt 184 64)
 		(output)
 		(text "LEDG[7..0]" (rect 0 0 55 12)(font "Arial" ))
-		(text "LEDG[7..0]" (rect 117 59 163 71)(font "Arial" ))
+		(text "LEDG[7..0]" (rect 117 59 172 71)(font "Arial" ))
 		(line (pt 184 64)(pt 168 64)(line_width 3))
 	)
 	(port
 		(pt 184 80)
 		(output)
 		(text "suma[6..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "suma[6..0]" (rect 119 75 163 87)(font "Arial" ))
+		(text "suma[6..0]" (rect 119 75 172 87)(font "Arial" ))
 		(line (pt 184 80)(pt 168 80)(line_width 3))
 	)
 	(drawing
@@ -1819,18 +1819,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 704 152)
-	(pt 752 152)
-)
-(connector
-	(pt 752 152)
-	(pt 752 88)
-)
-(connector
-	(pt 752 88)
-	(pt 784 88)
-)
-(connector
 	(pt 288 56)
 	(pt 280 56)
 )
@@ -1839,24 +1827,12 @@ applicable agreement for further details.
 	(pt 280 72)
 )
 (connector
-	(pt 480 152)
-	(pt 480 56)
-)
-(connector
 	(pt 448 56)
 	(pt 480 56)
 )
 (connector
-	(pt 448 88)
-	(pt 464 88)
-)
-(connector
 	(pt 520 168)
 	(pt 472 168)
-)
-(connector
-	(pt 472 168)
-	(pt 472 72)
 )
 (connector
 	(pt 448 72)
@@ -1880,9 +1856,26 @@ applicable agreement for further details.
 	(pt 464 88)
 	(pt 464 184)
 )
+(connector
+	(pt 472 72)
+	(pt 472 168)
+)
+(connector
+	(pt 480 56)
+	(pt 480 152)
+)
+(connector
+	(pt 448 88)
+	(pt 464 88)
+)
+(connector
+	(pt 464 88)
+	(pt 784 88)
+)
 (junction (pt 1056 88))
 (junction (pt 1056 104))
 (junction (pt 1056 120))
 (junction (pt 1056 240))
 (junction (pt 1056 256))
+(junction (pt 464 88))
 (text "ESTO DE AQUI ESTA AL REVES DE LO QUE EL SENTIDO COMÚN INDICA XD" (rect -8 288 423 302)(font "Arial" (font_size 8)))

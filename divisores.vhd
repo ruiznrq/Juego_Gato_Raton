@@ -40,7 +40,7 @@ BEGIN
 	process
 		variable contador:		integer range 0 to 50000000	:=0;
 		variable contador_1:		integer range 0 to 50000000	:=0;
-		variable contador_10:	integer range 0 to 250000000	:=0;
+		variable contador_10:	integer range 0 to 50000000	:=0;
 	begin		
 		WAIT UNTIL (clk'event AND clk='1');
 
@@ -53,7 +53,7 @@ BEGIN
 			contador_1:=0;
 		END IF;
 		
-		IF (contador_10=250000000) THEN
+		IF (contador_10=2500000) THEN
 			clk10_s<=NOT clk10_s;
 			contador_10:=0;
 		END IF;
@@ -90,5 +90,6 @@ BEGIN
 
 	clk_out<=clk_s;
 	clk_1hz<=clk1_s;
+	clk_10hz<=clk10_s;
 
 END ARCHITECTURE;

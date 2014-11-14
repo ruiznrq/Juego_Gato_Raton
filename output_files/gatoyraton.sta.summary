@@ -3,28 +3,44 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clk_50MHz'
-Slack : -7.551
-TNS   : -266.260
+Slack : -7.400
+TNS   : -331.010
 
 Type  : Slow Model Setup 'clocks:inst|clk_s'
-Slack : -4.489
-TNS   : -31.637
+Slack : -4.596
+TNS   : -33.474
+
+Type  : Slow Model Setup 'clocks:inst|clk10_s'
+Slack : -4.174
+TNS   : -71.159
 
 Type  : Slow Model Setup 'key2'
-Slack : -2.711
-TNS   : -2.711
+Slack : -2.464
+TNS   : -7.829
 
 Type  : Slow Model Setup 'key3'
-Slack : 0.225
+Slack : 0.227
 TNS   : 0.000
 
 Type  : Slow Model Setup 'clocks:inst|clk1_s'
 Slack : 0.379
 TNS   : 0.000
 
+Type  : Slow Model Setup 'SW0'
+Slack : 0.586
+TNS   : 0.000
+
+Type  : Slow Model Hold 'SW0'
+Slack : -3.903
+TNS   : -15.059
+
 Type  : Slow Model Hold 'clk_50MHz'
-Slack : -2.543
-TNS   : -5.080
+Slack : -2.545
+TNS   : -7.587
+
+Type  : Slow Model Hold 'key2'
+Slack : -2.410
+TNS   : -9.087
 
 Type  : Slow Model Hold 'clocks:inst|clk1_s'
 Slack : 0.391
@@ -34,25 +50,29 @@ Type  : Slow Model Hold 'key3'
 Slack : 0.391
 TNS   : 0.000
 
-Type  : Slow Model Hold 'clocks:inst|clk_s'
-Slack : 0.805
+Type  : Slow Model Hold 'clocks:inst|clk10_s'
+Slack : 0.568
 TNS   : 0.000
 
-Type  : Slow Model Hold 'key2'
-Slack : 1.683
+Type  : Slow Model Hold 'clocks:inst|clk_s'
+Slack : 0.635
 TNS   : 0.000
 
 Type  : Slow Model Recovery 'clocks:inst|clk_s'
-Slack : 0.157
-TNS   : 0.000
+Slack : -0.434
+TNS   : -0.434
 
 Type  : Slow Model Removal 'clocks:inst|clk_s'
-Slack : 0.113
+Slack : 0.704
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'clk_50MHz'
 Slack : -1.380
-TNS   : -55.380
+TNS   : -80.380
+
+Type  : Slow Model Minimum Pulse Width 'SW0'
+Slack : -1.380
+TNS   : -1.380
 
 Type  : Slow Model Minimum Pulse Width 'key3'
 Slack : -1.222
@@ -61,6 +81,10 @@ TNS   : -3.222
 Type  : Slow Model Minimum Pulse Width 'key2'
 Slack : -1.222
 TNS   : -1.222
+
+Type  : Slow Model Minimum Pulse Width 'clocks:inst|clk10_s'
+Slack : -0.500
+TNS   : -25.000
 
 Type  : Slow Model Minimum Pulse Width 'clocks:inst|clk_s'
 Slack : -0.500
@@ -71,31 +95,47 @@ Slack : -0.500
 TNS   : -1.000
 
 Type  : Fast Model Setup 'clk_50MHz'
-Slack : -2.902
-TNS   : -94.020
+Slack : -2.762
+TNS   : -110.366
+
+Type  : Fast Model Setup 'clocks:inst|clk10_s'
+Slack : -1.590
+TNS   : -21.504
 
 Type  : Fast Model Setup 'clocks:inst|clk_s'
-Slack : -1.371
-TNS   : -9.083
+Slack : -1.570
+TNS   : -10.407
 
 Type  : Fast Model Setup 'key2'
-Slack : -0.825
-TNS   : -0.825
+Slack : -0.662
+TNS   : -0.674
 
 Type  : Fast Model Setup 'key3'
-Slack : 0.627
+Slack : 0.631
 TNS   : 0.000
 
 Type  : Fast Model Setup 'clocks:inst|clk1_s'
 Slack : 0.665
 TNS   : 0.000
 
+Type  : Fast Model Setup 'SW0'
+Slack : 0.831
+TNS   : 0.000
+
+Type  : Fast Model Hold 'SW0'
+Slack : -1.750
+TNS   : -6.744
+
 Type  : Fast Model Hold 'clk_50MHz'
 Slack : -1.586
-TNS   : -3.167
+TNS   : -4.721
+
+Type  : Fast Model Hold 'key2'
+Slack : -1.407
+TNS   : -5.372
 
 Type  : Fast Model Hold 'clocks:inst|clk_s'
-Slack : 0.130
+Slack : 0.142
 TNS   : 0.000
 
 Type  : Fast Model Hold 'clocks:inst|clk1_s'
@@ -106,21 +146,25 @@ Type  : Fast Model Hold 'key3'
 Slack : 0.215
 TNS   : 0.000
 
-Type  : Fast Model Hold 'key2'
-Slack : 0.767
+Type  : Fast Model Hold 'clocks:inst|clk10_s'
+Slack : 0.263
 TNS   : 0.000
 
 Type  : Fast Model Recovery 'clocks:inst|clk_s'
-Slack : 0.403
-TNS   : 0.000
+Slack : -0.038
+TNS   : -0.038
 
 Type  : Fast Model Removal 'clocks:inst|clk_s'
-Slack : -0.023
-TNS   : -0.023
+Slack : 0.418
+TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'clk_50MHz'
 Slack : -1.380
-TNS   : -55.380
+TNS   : -80.380
+
+Type  : Fast Model Minimum Pulse Width 'SW0'
+Slack : -1.380
+TNS   : -1.380
 
 Type  : Fast Model Minimum Pulse Width 'key3'
 Slack : -1.222
@@ -129,6 +173,10 @@ TNS   : -3.222
 Type  : Fast Model Minimum Pulse Width 'key2'
 Slack : -1.222
 TNS   : -1.222
+
+Type  : Fast Model Minimum Pulse Width 'clocks:inst|clk10_s'
+Slack : -0.500
+TNS   : -25.000
 
 Type  : Fast Model Minimum Pulse Width 'clocks:inst|clk_s'
 Slack : -0.500
